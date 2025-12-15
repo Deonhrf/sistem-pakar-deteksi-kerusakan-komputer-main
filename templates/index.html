@@ -1,0 +1,270 @@
+{% extends 'layout.html' %}
+
+{% block title %}Beranda - Sistem Pakar Kerusakan Komputer{% endblock %}
+
+{% block content %}
+<!-- Hero Section - Tech Theme -->
+<header class="hero-tech text-white text-center position-relative overflow-hidden">
+  <div class="hero-grid"></div>
+  <div class="hero-particles">
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+  </div>
+  
+  <div class="container py-5 position-relative z-1">
+    <div class="row justify-content-center">
+      <div class="col-lg-9">
+        <div class="hero-badge animate-up mb-4">
+          <i class="bi bi-cpu"></i> SISTEM DIAGNOSA CERDAS
+        </div>
+        <h1 class="hero-title animate-up delay-1">HARDWARE FAILURE DETECTOR</h1>
+        <div class="tech-divider animate-up delay-1"></div>
+        <p class="hero-subtitle animate-up delay-2">Teknologi AI + Expert System untuk identifikasi kerusakan hardware secara real-time dengan akurasi tinggi</p>
+        
+        <div class="d-flex justify-content-center gap-3 animate-up delay-3 flex-wrap">
+          <a href="#mulai-diagnosa" class="btn btn-cyber btn-lg">
+            <span class="btn-text">► MULAI DIAGNOSA</span>
+            <span class="btn-glow"></span>
+          </a>
+          <a href="#cara-kerja" class="btn btn-cyber-outline btn-lg">
+            <span class="btn-text"><i class="bi bi-info-circle me-2"></i>PELAJARI</span>
+          </a>
+        </div>
+
+        <!-- Tech Stats Row -->
+        <div class="row g-3 mt-5 justify-content-center">
+          <div class="col-auto">
+            <div class="tech-stat">
+              <div class="stat-number">{{ kerusakan|length }}</div>
+              <div class="stat-label">Tipe Hardware</div>
+            </div>
+          </div>
+          <div class="col-auto">
+            <div class="tech-divider-vertical"></div>
+          </div>
+          <div class="col-auto">
+            <div class="tech-stat">
+              <div class="stat-number">{{ gejala|length }}</div>
+              <div class="stat-label">Gejala Aktif</div>
+            </div>
+          
+          </div>
+          <div class="col-auto">
+            <div class="tech-divider-vertical"></div>
+          </div>
+          <div class="col-auto">
+            <div class="tech-stat">
+              <div class="stat-number">99%</div>
+              <div class="stat-label">Akurasi CF</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="hero-scanline"></div>
+</header>
+
+<!-- Features Section - New Design -->
+<section class="container my-5">
+  <div class="text-center mb-5">
+    <h2 class="section-title">KEUNGGULAN TEKNIS</h2>
+    <p class="section-subtitle">Solusi enterprise-grade untuk diagnosa hardware</p>
+  </div>
+
+  <div class="row g-4">
+    <div class="col-md-4">
+      <div class="tech-card">
+        <div class="tech-card-header">
+          <i class="bi bi-lightning-charge"></i>
+        </div>
+        <h5 class="tech-card-title">RESPONS INSTAN</h5>
+        <div class="tech-bar"></div>
+        <p class="tech-card-text">Analisis real-time dengan hasil dalam milliseconds menggunakan advanced AI algorithms</p>
+        <div class="tech-footer">
+          <span class="badge-tech">⚡ Optimized</span>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="tech-card">
+        <div class="tech-card-header">
+          <i class="bi bi-shield-check"></i>
+        </div>
+        <h5 class="tech-card-title">PRESISI TINGGI</h5>
+        <div class="tech-bar"></div>
+        <p class="tech-card-text">Machine Learning + Certainty Factor untuk diagnosis akurat hingga level komponen hardware</p>
+        <div class="tech-footer">
+          <span class="badge-tech">✓ Verified</span>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="tech-card">
+        <div class="tech-card-header">
+          <i class="bi bi-gear"></i>
+        </div>
+        <h5 class="tech-card-title">SUPPORT LENGKAP</h5>
+        <div class="tech-bar"></div>
+        <p class="tech-card-text">Database hardware terlengkap dengan rekomendasi solusi repair yang akurat dan terpercaya</p>
+        <div class="tech-footer">
+          <span class="badge-tech">📊 Database</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Diagnosis Methods Section - Redesigned -->
+<section id="mulai-diagnosa" class="container py-5">
+  <div class="text-center mb-5">
+    <h2 class="section-title">DIAGNOSTIC MODE</h2>
+    <p class="section-subtitle">Pilih metode scanning yang sesuai dengan kondisi sistem Anda</p>
+  </div>
+
+  <div class="row justify-content-center">
+    <div class="col-lg-6">
+      <div class="diagnostic-card">
+        <div class="card-pulse"></div>
+        <div class="diagnostic-icon">
+          <i class="bi bi-search"></i>
+        </div>
+        <h3 class="diagnostic-title">SYMPTOM SCANNER</h3>
+        <div class="diagnostic-meta">
+          <span class="mode-tag">MODE: FORWARD CHAINING</span>
+          <span class="status-light">● ACTIVE</span>
+        </div>
+        
+        <div class="diagnostic-content">
+          <p class="diagnostic-description">
+            Gunakan mode ini jika Anda <strong>tidak tahu</strong> apa yang salah. Sistem akan melakukan scan penuh dan menganalisis gejala-gejala yang terdeteksi untuk menentukan jenis kerusakan hardware.
+          </p>
+          
+          <div class="diagnostic-features">
+            <div class="feature-item">
+              <span class="feature-icon">🔍</span>
+              <span>Scanning otomatis terhadap semua komponen</span>
+            </div>
+            <div class="feature-item">
+              <span class="feature-icon">📊</span>
+              <span>Analisis mendalam dengan confidence factor</span>
+            </div>
+            <div class="feature-item">
+              <span class="feature-icon">⚡</span>
+              <span>Hasil instan dengan rekomendasi akurat</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="d-grid gap-2 mt-4">
+          <a href="{{ url_for('forward') }}" class="btn btn-cyber">
+            <span class="btn-text">→ JALANKAN SCANNER</span>
+            <span class="btn-glow"></span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- How It Works Section - Tech Flow -->
+<section id="cara-kerja" class="bg-dark py-5 text-white position-relative overflow-hidden">
+  <div class="tech-grid-bg"></div>
+  <div class="container position-relative z-1">
+    <div class="text-center mb-5">
+      <h2 class="section-title text-white">WORKFLOW DIAGNOSIS</h2>
+      <p class="section-subtitle text-light">Proses analisis step-by-step menggunakan Expert System</p>
+    </div>
+
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="workflow-card">
+          <div class="workflow-number">01</div>
+          <div class="workflow-icon">
+            <i class="bi bi-sliders"></i>
+          </div>
+          <h5 class="workflow-title">INISIALISASI</h5>
+          <div class="workflow-line"></div>
+          <p class="workflow-text">Tentukan mode diagnosa yang sesuai dengan kondisi sistem komputer Anda. Pilih antara scanning otomatis atau verifikasi targeted</p>
+          <div class="workflow-badge">input</div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="workflow-card">
+          <div class="workflow-number">02</div>
+          <div class="workflow-icon">
+            <i class="bi bi-graph-up"></i>
+          </div>
+          <h5 class="workflow-title">ANALISIS</h5>
+          <div class="workflow-line"></div>
+          <p class="workflow-text">System melakukan deep analysis terhadap gejala yang dipilih menggunakan algoritma Certainty Factor dan knowledge base hardware</p>
+          <div class="workflow-badge">processing</div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="workflow-card">
+          <div class="workflow-number">03</div>
+          <div class="workflow-icon">
+            <i class="bi bi-check-circle"></i>
+          </div>
+          <h5 class="workflow-title">HASIL</h5>
+          <div class="workflow-line"></div>
+          <p class="workflow-text">Dapatkan laporan lengkap diagnosis beserta solusi perbaikan yang direkomendasikan dengan tingkat akurasi tinggi</p>
+          <div class="workflow-badge">output</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 
+{% endblock %}
+
+{% block scripts %}
+<script>
+  // Counter animation
+  function animateCounters() {
+    const counters = document.querySelectorAll('.counter h3');
+
+    counters.forEach(counter => {
+      const target = +counter.innerText.replace(/[^0-9.]/g, '');
+      const isPercentage = counter.innerText.includes('%');
+      const increment = target / 100;
+      let current = 0;
+
+      const updateCounter = () => {
+        current += increment;
+        if (current < target) {
+          counter.innerText = Math.ceil(current) + (isPercentage ? '%' : '');
+          requestAnimationFrame(updateCounter);
+        } else {
+          counter.innerText = target + (isPercentage ? '%' : '');
+        }
+      };
+
+      updateCounter();
+    });
+  }
+
+  // Trigger counter animation when in view
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        animateCounters();
+        observer.disconnect();
+      }
+    });
+  });
+
+  const counterSection = document.querySelector('.counter');
+  if (counterSection) {
+    observer.observe(counterSection);
+  }
+</script>
+{% endblock %}
